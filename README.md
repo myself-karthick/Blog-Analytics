@@ -53,4 +53,4 @@ curl --request GET \
    ```
 ## Additional Feature:
 Implemented caching mechanism using Lodash's memoize function to store the analytics results and search results for a certain period. 
-If the same requests are made within the caching period, return the cached results instead of re-fetching and re-analyzing the data.
+If the same requests are made within the caching period, returned the cached results instead of re-fetching and re-analyzing the data.
