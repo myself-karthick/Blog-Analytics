@@ -64,7 +64,7 @@ const getBlogStats = async (req, res) => {
   }
 };
 
-const blogSearch = async (req, res) => {
+const searchBlogs = async (req, res) => {
   try {
     if (!req.query.query) {
       throw "A value in the query parameter is required.";
@@ -97,4 +97,4 @@ const blogSearch = async (req, res) => {
   }
 };
 
-export { getBlogStats, blogSearch };
+export { getBlogStats, searchBlogs };
