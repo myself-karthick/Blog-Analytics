@@ -1,9 +1,9 @@
 import express from "express";
 import { blogSearch, getBlogStats } from "../controllers/blogControllers.js";
-import { memoizedHandler } from "../middleware/cacheMiddleware.js";
+
 const router = express.Router();
 
-router.get("/blog-stats", memoizedHandler, getBlogStats);
-router.get("/blog-search", memoizedHandler, blogSearch);
+router.get("/blog-stats", getBlogStats);
+router.get("/blog-search", blogSearch);
 
 export default router;
